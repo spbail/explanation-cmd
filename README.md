@@ -2,7 +2,7 @@
 
 ## Usage
 
-   java -jar explanation-cmd.jar -o owlfile -e entailmentfile [options]
+    java -jar explanation-cmd.jar -o owlfile -e entailmentfile [options]
 
 Options
 
