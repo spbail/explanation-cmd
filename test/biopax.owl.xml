@@ -1,0 +1,3436 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.biopax.org/release/biopax-level3.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.biopax.org/release/biopax-level3.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#BindingFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#BiochemicalPathwayStep"/>
+        <Class IRI="#PathwayStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#BiochemicalPathwayStep"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#stepProcess"/>
+            <Class IRI="#Control"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#BiochemicalReaction"/>
+        <Class IRI="#Conversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Catalysis"/>
+        <Class IRI="#Control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Catalysis"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#controlled"/>
+            <Class IRI="#Conversion"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Catalysis"/>
+        <DataHasValue>
+            <DataProperty IRI="#controlType"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ChemicalStructure"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#structureData"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ChemicalStructure"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#structureFormat"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Complex"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Complex"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberPhysicalEntity"/>
+            <Class IRI="#Complex"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ComplexAssembly"/>
+        <Class IRI="#Conversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Control"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ControlledVocabulary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#xref"/>
+            <Class IRI="#UnificationXref"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Conversion"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Conversion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#participant"/>
+            <Class IRI="#PhysicalEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#CovalentBindingFeature"/>
+        <Class IRI="#BindingFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#CovalentBindingFeature"/>
+        <Class IRI="#ModificationFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Degradation"/>
+        <Class IRI="#Conversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Degradation"/>
+        <DataHasValue>
+            <DataProperty IRI="#conversionDirection"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DeltaG"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#deltaGPrime0"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Dna"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Dna"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#entityReference"/>
+            <Class IRI="#DnaReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Dna"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberPhysicalEntity"/>
+            <Class IRI="#Dna"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DnaReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DnaReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberEntityReference"/>
+            <Class IRI="#DnaReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DnaReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subRegion"/>
+            <Class IRI="#DnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DnaRegion"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DnaRegion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#entityReference"/>
+            <Class IRI="#DnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DnaRegion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberPhysicalEntity"/>
+            <Class IRI="#DnaRegion"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DnaRegionReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#DnaRegionReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subRegion"/>
+            <Class IRI="#DnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Evidence"/>
+        <ObjectUnionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#confidence"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#evidenceCode"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#experimentalForm"/>
+            </ObjectMinCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ExperimentalForm"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#experimentalFormDescription"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#FragmentFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Gene"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Gene"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#organism"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#GeneticInteraction"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#GeneticInteraction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#participant"/>
+            <Class IRI="#Gene"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#GeneticInteraction"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#participant"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#GeneticInteraction"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#phenotype"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#GeneticInteraction"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#interactionType"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Interaction"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#InteractionVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#KPrime"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#KPrime"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#kPrime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ModificationFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Modulation"/>
+        <Class IRI="#Control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Modulation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#controlled"/>
+            <Class IRI="#Catalysis"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Modulation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#controller"/>
+            <Class IRI="#PhysicalEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#MolecularInteraction"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#MolecularInteraction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#participant"/>
+            <Class IRI="#PhysicalEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Pathway"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#PathwayStep"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#PhenotypeVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#PhysicalEntity"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Protein"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Protein"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#entityReference"/>
+            <Class IRI="#ProteinReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Protein"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberPhysicalEntity"/>
+            <Class IRI="#Protein"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ProteinReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#ProteinReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberEntityReference"/>
+            <Class IRI="#ProteinReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Provenance"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Provenance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#xref"/>
+            <ObjectUnionOf>
+                <Class IRI="#PublicationXref"/>
+                <Class IRI="#UnificationXref"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#PublicationXref"/>
+        <Class IRI="#Xref"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RelationshipXref"/>
+        <Class IRI="#Xref"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Rna"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Rna"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#entityReference"/>
+            <Class IRI="#RnaReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Rna"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberPhysicalEntity"/>
+            <Class IRI="#Rna"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RnaReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RnaReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberEntityReference"/>
+            <Class IRI="#RnaReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RnaReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subRegion"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RnaRegion"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RnaRegion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#entityReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RnaRegion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberPhysicalEntity"/>
+            <Class IRI="#RnaRegion"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RnaRegionReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#RnaRegionReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subRegion"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Score"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Score"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#value"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SequenceInterval"/>
+        <Class IRI="#SequenceLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SequenceLocation"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SequenceModificationVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SequenceRegionVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SequenceSite"/>
+        <Class IRI="#SequenceLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SmallMolecule"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SmallMolecule"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#entityReference"/>
+            <Class IRI="#SmallMoleculeReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SmallMolecule"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#feature"/>
+            <Class IRI="#BindingFeature"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SmallMolecule"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberPhysicalEntity"/>
+            <Class IRI="#SmallMolecule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SmallMolecule"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#notFeature"/>
+            <Class IRI="#BindingFeature"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SmallMoleculeReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#SmallMoleculeReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberEntityReference"/>
+            <Class IRI="#SmallMoleculeReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Stoichiometry"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Stoichiometry"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#physicalEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Stoichiometry"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#stoichiometricCoefficient"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TemplateReaction"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TemplateReaction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#participant"/>
+            <Class IRI="#PhysicalEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TemplateReactionRegulation"/>
+        <Class IRI="#Control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TemplateReactionRegulation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#controlled"/>
+            <Class IRI="#TemplateReaction"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TemplateReactionRegulation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#controller"/>
+            <Class IRI="#PhysicalEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TemplateReactionRegulation"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#controlType"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION</Literal>
+            </DataOneOf>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TissueVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Transport"/>
+        <Class IRI="#Conversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TransportWithBiochemicalReaction"/>
+        <Class IRI="#BiochemicalReaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#TransportWithBiochemicalReaction"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#UnificationXref"/>
+        <Class IRI="#Xref"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#UnificationXref"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#db"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#UnificationXref"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#id"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Xref"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Control"/>
+        <Class IRI="#GeneticInteraction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Conversion"/>
+        <Class IRI="#GeneticInteraction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Dna"/>
+        <Class IRI="#Protein"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Dna"/>
+        <Class IRI="#Rna"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Gene"/>
+        <Class IRI="#Interaction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Gene"/>
+        <Class IRI="#Pathway"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Gene"/>
+        <Class IRI="#PhysicalEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#GeneticInteraction"/>
+        <Class IRI="#MolecularInteraction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#GeneticInteraction"/>
+        <Class IRI="#TemplateReaction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Interaction"/>
+        <Class IRI="#Pathway"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Interaction"/>
+        <Class IRI="#PhysicalEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Pathway"/>
+        <Class IRI="#PhysicalEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class IRI="#Protein"/>
+        <Class IRI="#Rna"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://www.biopax.org/release/biopax-level3.owl#genid110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://www.biopax.org/release/biopax-level3.owl#genid131"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://www.biopax.org/release/biopax-level3.owl#genid154"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://www.biopax.org/release/biopax-level3.owl#genid158"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://www.biopax.org/release/biopax-level3.owl#genid165"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://www.biopax.org/release/biopax-level3.owl#genid179"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://www.biopax.org/release/biopax-level3.owl#genid186"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://www.biopax.org/release/biopax-level3.owl#genid45"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cofactor"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#controlled"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#controller"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#left"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#product"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#right"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#stepConversion"/>
+        <ObjectProperty IRI="#stepProcess"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#template"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#bindsTo"/>
+        <ObjectProperty IRI="#bindsTo"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#absoluteRegion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#bindsTo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cellType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cellularLocation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#controlled"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityReference"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityReferenceType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#modificationType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#organism"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#phenotype"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#physicalEntity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#regionType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#scoreSource"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#sequenceIntervalBegin"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#sequenceIntervalEnd"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#stepConversion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#structure"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#template"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#tissue"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#bindsTo"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#component"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityFeature"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#bindsTo"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#memberFeature"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#memberPhysicalEntity"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#absoluteRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#bindsTo"/>
+        <Class IRI="#BindingFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cellType"/>
+        <Class IRI="#BioSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cellularLocation"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cofactor"/>
+        <Class IRI="#Catalysis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#component"/>
+        <Class IRI="#Complex"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#componentStoichiometry"/>
+        <Class IRI="#Complex"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#confidence"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#controlled"/>
+        <Class IRI="#Control"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#controller"/>
+        <Class IRI="#Control"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#dataSource"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#deltaG"/>
+        <Class IRI="#BiochemicalReaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityFeature"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityReference"/>
+        <ObjectUnionOf>
+            <Class IRI="#Dna"/>
+            <Class IRI="#DnaRegion"/>
+            <Class IRI="#Protein"/>
+            <Class IRI="#Rna"/>
+            <Class IRI="#RnaRegion"/>
+            <Class IRI="#SmallMolecule"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityReferenceType"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#evidence"/>
+        <ObjectUnionOf>
+            <Class IRI="#Entity"/>
+            <Class IRI="#EntityFeature"/>
+            <Class IRI="#EntityReference"/>
+            <Class IRI="#PathwayStep"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#evidenceCode"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#experimentalFeature"/>
+        <Class IRI="#ExperimentalForm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#experimentalForm"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#experimentalFormDescription"/>
+        <Class IRI="#ExperimentalForm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#experimentalFormEntity"/>
+        <Class IRI="#ExperimentalForm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#feature"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#featureLocation"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#featureLocationType"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#interactionScore"/>
+        <Class IRI="#GeneticInteraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#interactionType"/>
+        <Class IRI="#Interaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#kEQ"/>
+        <Class IRI="#BiochemicalReaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#left"/>
+        <Class IRI="#Conversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#memberEntityReference"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#memberFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#memberPhysicalEntity"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#modificationType"/>
+        <Class IRI="#ModificationFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#nextStep"/>
+        <Class IRI="#PathwayStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#notFeature"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#organism"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaReference"/>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#Gene"/>
+            <Class IRI="#Pathway"/>
+            <Class IRI="#ProteinReference"/>
+            <Class IRI="#RnaReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#participant"/>
+        <Class IRI="#Interaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#participantStoichiometry"/>
+        <Class IRI="#Conversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#pathwayComponent"/>
+        <Class IRI="#Pathway"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#pathwayOrder"/>
+        <Class IRI="#Pathway"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#phenotype"/>
+        <Class IRI="#GeneticInteraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#physicalEntity"/>
+        <Class IRI="#Stoichiometry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#product"/>
+        <Class IRI="#TemplateReaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#regionType"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#relationshipType"/>
+        <Class IRI="#RelationshipXref"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#right"/>
+        <Class IRI="#Conversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#scoreSource"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#sequenceIntervalBegin"/>
+        <Class IRI="#SequenceInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#sequenceIntervalEnd"/>
+        <Class IRI="#SequenceInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#stepConversion"/>
+        <Class IRI="#BiochemicalPathwayStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#stepProcess"/>
+        <Class IRI="#PathwayStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#structure"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#subRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaReference"/>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#RnaReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#template"/>
+        <Class IRI="#TemplateReaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#tissue"/>
+        <Class IRI="#BioSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#xref"/>
+        <ObjectUnionOf>
+            <Class IRI="#BioSource"/>
+            <Class IRI="#ControlledVocabulary"/>
+            <Class IRI="#Entity"/>
+            <Class IRI="#EntityReference"/>
+            <Class IRI="#Evidence"/>
+            <Class IRI="#Provenance"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#absoluteRegion"/>
+        <Class IRI="#SequenceLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#bindsTo"/>
+        <Class IRI="#BindingFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cellType"/>
+        <Class IRI="#CellVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cellularLocation"/>
+        <Class IRI="#CellularLocationVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#cofactor"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#component"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#componentStoichiometry"/>
+        <Class IRI="#Stoichiometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#confidence"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#controlled"/>
+        <ObjectUnionOf>
+            <Class IRI="#Interaction"/>
+            <Class IRI="#Pathway"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#controller"/>
+        <ObjectUnionOf>
+            <Class IRI="#Pathway"/>
+            <Class IRI="#PhysicalEntity"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#dataSource"/>
+        <Class IRI="#Provenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#deltaG"/>
+        <Class IRI="#DeltaG"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityReference"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#entityReferenceType"/>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#evidence"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#evidenceCode"/>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#experimentalFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#experimentalForm"/>
+        <Class IRI="#ExperimentalForm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#experimentalFormDescription"/>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#experimentalFormEntity"/>
+        <ObjectUnionOf>
+            <Class IRI="#Gene"/>
+            <Class IRI="#PhysicalEntity"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#feature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#featureLocation"/>
+        <Class IRI="#SequenceLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#featureLocationType"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#interactionScore"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#interactionType"/>
+        <Class IRI="#InteractionVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#kEQ"/>
+        <Class IRI="#KPrime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#left"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#memberEntityReference"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#memberFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#memberPhysicalEntity"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#modificationType"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#nextStep"/>
+        <Class IRI="#PathwayStep"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#notFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#organism"/>
+        <Class IRI="#BioSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#participant"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#participantStoichiometry"/>
+        <Class IRI="#Stoichiometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#pathwayComponent"/>
+        <ObjectUnionOf>
+            <Class IRI="#Interaction"/>
+            <Class IRI="#Pathway"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#pathwayOrder"/>
+        <Class IRI="#PathwayStep"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#phenotype"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#physicalEntity"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#product"/>
+        <ObjectUnionOf>
+            <Class IRI="#Dna"/>
+            <Class IRI="#Protein"/>
+            <Class IRI="#Rna"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#regionType"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#relationshipType"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#right"/>
+        <Class IRI="#PhysicalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#scoreSource"/>
+        <Class IRI="#Provenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#sequenceIntervalBegin"/>
+        <Class IRI="#SequenceSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#sequenceIntervalEnd"/>
+        <Class IRI="#SequenceSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#stepConversion"/>
+        <Class IRI="#Conversion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#stepProcess"/>
+        <ObjectUnionOf>
+            <Class IRI="#Interaction"/>
+            <Class IRI="#Pathway"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#structure"/>
+        <Class IRI="#ChemicalStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#subRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#template"/>
+        <ObjectUnionOf>
+            <Class IRI="#Dna"/>
+            <Class IRI="#DnaRegion"/>
+            <Class IRI="#Rna"/>
+            <Class IRI="#RnaRegion"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#tissue"/>
+        <Class IRI="#TissueVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <ObjectProperty IRI="#xref"/>
+        <Class IRI="#Xref"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#displayName"/>
+        <DataProperty IRI="#name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#standardName"/>
+        <DataProperty IRI="#name"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#catalysisDirection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#chemicalFormula"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#controlType"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#conversionDirection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#db"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#dbVersion"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#deltaGPrime0"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#displayName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#idVersion"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#intraMolecular"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#ionicStrength"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#kPrime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#molecularWeight"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#pMg"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#patoData"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#ph"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#positionStatus"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#sequence"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#sequencePosition"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#spontaneous"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#standardName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#stepDirection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#stoichiometricCoefficient"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#structureData"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#structureFormat"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#temperature"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#templateDirection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#value"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#year"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#author"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#availability"/>
+        <Class IRI="#Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#catalysisDirection"/>
+        <Class IRI="#Catalysis"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#chemicalFormula"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#comment"/>
+        <ObjectUnionOf>
+            <Class IRI="#Entity"/>
+            <Class IRI="#UtilityClass"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#controlType"/>
+        <Class IRI="#Control"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#conversionDirection"/>
+        <Class IRI="#Conversion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#db"/>
+        <Class IRI="#Xref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#dbVersion"/>
+        <Class IRI="#Xref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#deltaGPrime0"/>
+        <Class IRI="#DeltaG"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#deltaH"/>
+        <Class IRI="#BiochemicalReaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#deltaS"/>
+        <Class IRI="#BiochemicalReaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#eCNumber"/>
+        <Class IRI="#BiochemicalReaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Xref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#idVersion"/>
+        <Class IRI="#Xref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#intraMolecular"/>
+        <Class IRI="#BindingFeature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#ionicStrength"/>
+        <ObjectUnionOf>
+            <Class IRI="#DeltaG"/>
+            <Class IRI="#KPrime"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#kPrime"/>
+        <Class IRI="#KPrime"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#molecularWeight"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#name"/>
+        <ObjectUnionOf>
+            <Class IRI="#BioSource"/>
+            <Class IRI="#Entity"/>
+            <Class IRI="#EntityReference"/>
+            <Class IRI="#Provenance"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#pMg"/>
+        <ObjectUnionOf>
+            <Class IRI="#DeltaG"/>
+            <Class IRI="#KPrime"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#patoData"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#ph"/>
+        <ObjectUnionOf>
+            <Class IRI="#DeltaG"/>
+            <Class IRI="#KPrime"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#positionStatus"/>
+        <Class IRI="#SequenceSite"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#sequence"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaReference"/>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#ProteinReference"/>
+            <Class IRI="#RnaReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#sequencePosition"/>
+        <Class IRI="#SequenceSite"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#source"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#spontaneous"/>
+        <Class IRI="#Conversion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#stepDirection"/>
+        <Class IRI="#BiochemicalPathwayStep"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#stoichiometricCoefficient"/>
+        <Class IRI="#Stoichiometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#structureData"/>
+        <Class IRI="#ChemicalStructure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#structureFormat"/>
+        <Class IRI="#ChemicalStructure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#temperature"/>
+        <ObjectUnionOf>
+            <Class IRI="#DeltaG"/>
+            <Class IRI="#KPrime"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#templateDirection"/>
+        <Class IRI="#TemplateReaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#term"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#value"/>
+        <Class IRI="#Score"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#year"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#author"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#availability"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#catalysisDirection"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RIGHT-TO-LEFT</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#chemicalFormula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#comment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#controlType"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ACTIVATION-ALLOSTERIC</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ACTIVATION-NONALLOSTERIC</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-ALLOSTERIC</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-COMPETITIVE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-IRREVERSIBLE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-NONCOMPETITIVE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-OTHER</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-UNCOMPETITIVE</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#conversionDirection"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">REVERSIBLE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RIGHT-TO-LEFT</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#db"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#dbVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#deltaGPrime0"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#deltaH"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#deltaS"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#displayName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#eCNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#idVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#intraMolecular"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#ionicStrength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#kPrime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#molecularWeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#pMg"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#patoData"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#ph"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#positionStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EQUAL</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GREATER-THAN</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LESS-THAN</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#sequence"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#sequencePosition"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#source"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#spontaneous"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#standardName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#stepDirection"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">REVERSIBLE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RIGHT-TO-LEFT</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#stoichiometricCoefficient"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#structureData"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#structureFormat"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CML</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">InChI</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SMILES</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#temperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#templateDirection"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FORWARD</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">REVERSE</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#term"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#value"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <Annotation>
+            <AnnotationProperty IRI="http://owl.cs.manchester.ac.uk/ontology#sourceOntology"/>
+            <IRI></IRI>
+        </Annotation>
+        <DataProperty IRI="#year"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 1.3.1.942) http://owlapi.sourceforge.net -->
+

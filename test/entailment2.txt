@@ -1,0 +1,4 @@
+<SubClassOf>
+        <Class IRI="http://www.biopax.org/release/biopax-level3.owl#UnificationXref"/>
+        <Class IRI="http://www.biopax.org/release/biopax-level3.owl#Xref"/>
+    </SubClassOf>
