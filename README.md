@@ -1,16 +1,18 @@
 # OWL Explanation command line tool
 
 ## Usage
-java -jar explanation-cmd.jar -o owlfile -e entailmentfile [options]
+   java -jar explanation-cmd.jar -o owlfile -e entailmentfile [options]
 
 Options
     -t timeout in seconds (default: no timeout)
+
     -l maximum number of justifications (default: no limit)
+
     -d output directory (default: print to stdout)
 
 ## Examples
 Use files in the "test" directory:
-java -jar explanation-cmd.jar -o biopax.owl.xml -e entailment2.txt -l 10 -t 30
+    java -jar explanation-cmd.jar -o biopax.owl.xml -e entailment2.txt -l 10 -t 30
 
 ## Please note
 * If no output directory is given, the explanations are printed to stdout.
