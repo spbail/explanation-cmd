@@ -78,7 +78,7 @@ public class ExplanationGeneratorUI {
     }
 
     private static void printExplanations(Set<Explanation<OWLAxiom>> explanations, String outDir) {
-        if (outDir.equals("")) {
+        if (outDir == null) {
             printExplanationsToScreen(explanations);
         } else {
             saveExplanationsToFile(explanations, new File(outDir));
@@ -108,9 +108,8 @@ public class ExplanationGeneratorUI {
 
     private static void printExplanationsToScreen(Set<Explanation<OWLAxiom>> explanations) {
         OWLAxiom entailment = explanations.iterator().next().getEntailment();
-        System.out.println("\n>> Entailment");
-        Util.print(entailment);
-        System.out.println("\n>> Explanations");
+
+        System.out.println("\n\n>> Found " + explanations.size() + " explanations for " + Util.render(entailment) + "\n");
         for (Explanation<OWLAxiom> ex : explanations) {
             Util.print(ex);
         }
