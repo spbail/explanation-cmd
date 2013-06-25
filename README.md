@@ -1,5 +1,7 @@
 # OWL Explanation command line tool
 
+A wrapper for the OWL explanation library by Matthew Horridge.
+
 ## Usage
 
     java -jar explanation-cmd.jar -o owlfile -e entailmentfile [options]
